@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://webthemez.com/demo/ocean-free-coming-soon-bootstrap-template/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+    
+    <title>العداد التنازلي</title>
+	<meta property="og:title" content="العداد التنازلي" />
+	<meta property="og:description" content="كم باقي على مناسباتك السعيدة" />
+	<meta property="og:image" content="/bg/hajj.jpg" />
+    
+    <!-- Mobile Specific Meta -->   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+    <!-- Bootstrap -->
+    <link href="./inbox_files/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="./inbox_files/style.css"> 
+    <link rel="stylesheet" href="./inbox_files/timerStyles.css">
+
+    <!-- Font Awesome -->
+    <link href="./inbox_files/font-awesome.min.css" rel="stylesheet">
+
+ 
+
+  <style type="text/css">@font-face { font-family: Roboto; src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); }
+
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0%;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 100%;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=date] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=date]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+</style></head>
+
+ 
+  <body data-new-gr-c-s-check-loaded="14.1016.0" data-gr-ext-installed="">
+ <div class="bg">
+	 <div class="bg-color">
+		  <div class="container content">
+	 
+				<div class="row">
+					<div class="blazer clearfix">
+						<div class="col-sm-12"><br>
+						   <h2 id="title">عيد الأضحى المبارك</h2>
+						   <h3 id="date">الوقت المتبقي على عيد الأضحى المبارك</h3>        
+						</div>
+						 
+						<div id="right-block" class="col-sm-12 text-center">
+							<div class="row">
+							   <div class="col-sm-offset-1 col-sm-10">
+									<div class="timing">
+										<div id="count-down" data-date="2022-07-08 00:00:00" data-tc-id="43b88f43-27f5-ae2d-cf82-0f107e7fdeae">
+											
+										<div class="time_circles"><canvas width="945" height="236"></canvas><div class="textDiv_Days" style="top: 83px; left: 0px; width: 236.25px;"><h4 style="font-size: 17px; line-height: 17px;">Days</h4><span style="font-size: 50px; line-height: 17px;">2007</span></div><div class="textDiv_Hours" style="top: 83px; left: 236px; width: 236.25px;"><h4 style="font-size: 17px; line-height: 17px;">Hours</h4><span style="font-size: 50px; line-height: 17px;">14</span></div><div class="textDiv_Minutes" style="top: 83px; left: 473px; width: 236.25px;"><h4 style="font-size: 17px; line-height: 17px;">Minutes</h4><span style="font-size: 50px; line-height: 17px;">43</span></div><div class="textDiv_Seconds" style="top: 83px; left: 709px; width: 236.25px;"><h4 style="font-size: 17px; line-height: 17px;">Seconds</h4><span style="font-size: 50px; line-height: 17px;">50</span></div></div></div>
+									</div>
+									<!-- /.timing -->
+							   </div>
+							</div>
+							<div class="row">
+							  <div class="col-sm-offset-2 col-sm-8">
+								<p class="alert-success"></p>
+								<p class="alert-warning"></p>
+								  <div class="input-group">
+									<span class="input-group-btn">
+									  <button id="edit"  class="btn btn-default btn-sand" onclick="openForm()">إصنع عدادك الخاص</button>
+
+									</span>
+								  </div><!-- /input-group -->
+							  </div>
+							</div>    
+							<div class="form-popup" id="myForm">
+								<form action="" class="form-container">
+								  <h1>أنشئ عدادك الخاص</h1>
+							  
+								  <label for="date"><b>التاريخ</b></label><br>
+								  <input type="date"  name="d" required>
+							  <br>
+								  <label for="title"><b>عنوان الحدث</b></label><br>
+								  <input type="text" placeholder="مثلاً: يوم زواجك" name="t" required>
+
+							  <input type="hidden" name="bg" value="none">
+
+								  <button type="submit" class="btn">أنشئ</button>
+								  <button type="button" class="btn cancel" onclick="closeForm()">لإلغاء</button>
+								</form>
+							  </div>
+							  
+							  <script>
+							  function openForm() {
+								document.getElementById("myForm").style.display = "block";
+								//document.getElementById("edit").style.display = "none";
+							  }
+							  
+							  function closeForm() {
+								document.getElementById("myForm").style.display = "none";
+								//document.getElementById("edit").style.display = "block";
+							  }
+							  </script>
+
+							<p class="followus"></p>
+                               	<div class="row">
+							<div class="col-sm-12 text-center copyRights"> تصميم وبرمجة: سامي خنفور 
+								<a href="http://twitter.com/samikhanfor">@SamiKhanfor</a>
+							</div>
+						</div>
+		
+									
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- .container end here -->
+	 </div>
+ </div>
+   
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./inbox_files/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./inbox_files/bootstrap.min.js"></script>
+    <script src="./inbox_files/timerStyles.js"></script>
+    <script src="./inbox_files/jquery.ajaxchimp.min.js"></script>
+    <script src="./inbox_files/script.js"></script>
+    <script src="./inbox_files/jquery.placeholder.js"></script>
+	<script>
+
+		const params = new Proxy(new URLSearchParams(window.location.search), {
+		get: (searchParams, prop) => searchParams.get(prop),
+		});
+		// Get the value of "d" in eg "https://example.com/?d=some_value"
+		let value = params.d; // date
+		let title = params.t; // title
+		let bg = params.bg; // background
+
+
+		/*function timeConverter(UNIX_timestamp){
+		var a = new Date(UNIX_timestamp * 1000);
+		var year = a.getFullYear();
+		var month = a.getMonth()+1;
+		var date = a.getDate();
+		var hour = a.getHours();
+		var min = a.getMinutes();
+		var sec = a.getSeconds();
+		//var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;2023-12-28 00:00:00
+		var time = year + '-' + month + '-' + date;
+		return time;
+		}*/
+			
+		if(value!=null) document.getElementById("count-down").setAttribute("data-date",value);
+		if(value!=null) document.getElementById("date").innerHTML=value;
+		if(title!=null) document.getElementById("title").innerHTML=title;
+		if(bg!=null) document.getElementsByClassName("bg")[0].style.backgroundImage="url('./bg/"+bg+".jpg')";
+
+		</script>
+    <script>
+      $("#count-down").TimeCircles(
+       {   
+           circle_bg_color: "#ffffff",
+           use_background: true,
+           bg_width: .2,
+           fg_width: 0.013,
+           time: {
+                Days: { color: "#ffffff" },
+                Hours: { color: "#ffffff" },
+                Minutes: { color: "#ffffff" },
+                Seconds: { color: "#ffffff" }
+            }
+       }
+    );
+
+    </script>
+    
+  
+<div at-magnifier-wrapper=""><div class="at-theme-light"><div class="at-base notranslate" translate="no"><div class="Z1-AJ" style="top: 0px; left: 0px;"></div></div></div></div>
+</body>
+</html>
