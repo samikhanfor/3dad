@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- saved from url=(0069)https://webthemez.com/demo/ocean-free-coming-soon-bootstrap-template/ -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>العداد التنازلي</title>
 	<meta property="og:title" content="العداد التنازلي" />
 	<meta property="og:description" content="كم باقي على مناسباتك السعيدة" />
@@ -113,8 +113,8 @@
 								  <div class="input-group">
 									<span class="input-group-btn">
 									  <button id="edit"  class="btn btn-default btn-sand" onclick="openForm()">إصنع عدادك الخاص</button>
-									<a id="whatsapp" href="http://whatsapp://send?text=عداد التاريخ الهجري " data-action="share/whatsapp/share">أنشر بالواتساب</a> 
 									</span>
+									  <a id="whatsapp" href="http://whatsapp://send?text=عداد التاريخ الهجري " data-action="share/whatsapp/share">&lt;i class="fa fa-whatsapp" style="font-size:48px;color:green"&gt;شارك&lt;/i&gt;</a>
 								  </div><!-- /input-group -->
 							  </div>
 							</div>    
@@ -185,7 +185,7 @@
     <script src="./inbox_files/script.js"></script>
     <script src="./inbox_files/jquery.placeholder.js"></script>
 	<script>
-document.getElementById("whatsapp").innerHTML+=window.location.href
+document.getElementById("whatsapp").href+=window.location.href
 		const params = new Proxy(new URLSearchParams(window.location.search), {
 		get: (searchParams, prop) => searchParams.get(prop),
 		});
