@@ -122,13 +122,21 @@
 								<form action="" class="form-container">
 								  <h1>أنشئ عدادك الخاص</h1>
 							  
-								  <label for="date"><b>التاريخ</b></label><br>
+								  <label for="d"><b>التاريخ</b></label><br>
 								  <input type="date"  name="d" required>
 							  <br>
-								  <label for="title"><b>عنوان الحدث</b></label><br>
+								  <label for="t"><b>عنوان الحدث</b></label><br>
 								  <input type="text" placeholder="مثلاً: يوم زواجك" name="t" required>
 
-							  <input type="hidden" name="bg" value="none">
+							  <label for="bg">Choose a car:</label>
+
+							<select name="bg" id="cars">
+							  <option value="none">بدون</option>
+							  <option value="school">دراسة</option>
+							  <option value="wedding">زواج</option>
+							<option value="hajj">عيد أضحى</option>
+							  <option value="3shora">عاشوراء</option>
+							</select>
 
 								  <button type="submit" class="btn">أنشئ</button>
 								  <button type="button" class="btn cancel" onclick="closeForm()">لإلغاء</button>
