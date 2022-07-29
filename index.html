@@ -113,7 +113,7 @@
 								  <div class="input-group">
 									<span class="input-group-btn">
 									  <button id="edit"  class="btn btn-default btn-sand" onclick="openForm()">إصنع عدادك الخاص</button>
-
+									<a id="whatsapp" href="http://whatsapp://send?text=عداد التاريخ الهجري " data-action="share/whatsapp/share">أنشر بالواتساب</a> 
 									</span>
 								  </div><!-- /input-group -->
 							  </div>
@@ -144,6 +144,8 @@
 							  </div>
 							  
 							  <script>
+								  
+								  
 							  function openForm() {
 								document.getElementById("myForm").style.display = "block";
 								//document.getElementById("edit").style.display = "none";
@@ -157,7 +159,7 @@
 
 							<p class="followus"></p>
                                	<div class="row">
-							<div class="col-sm-12 text-center copyRights"> تصميم وبرمجة: سامي خنفور 
+							<div class="col-sm-12 text-center copyRights"> برمجة: سامي خنفور 
 								<a href="http://twitter.com/samikhanfor">@SamiKhanfor</a>
 							</div>
 						</div>
@@ -183,7 +185,7 @@
     <script src="./inbox_files/script.js"></script>
     <script src="./inbox_files/jquery.placeholder.js"></script>
 	<script>
-
+document.getElementById("whatsapp").innerHTML+=window.location.href
 		const params = new Proxy(new URLSearchParams(window.location.search), {
 		get: (searchParams, prop) => searchParams.get(prop),
 		});
